@@ -3,29 +3,1080 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Euphraxiia - Homepage</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <title>Euphraxiia - Portfolio</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="blog.html">Blog</a></li>
+    <div class="scroll-progress" id="scroll-progress"></div>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <i class="bx bxs-user-circle"></i>
+                Euphraxiia
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class="bx bx-home nav__icon"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            <i class="bx bx-user nav__icon"></i>
+                            <span>About</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class="bx bx-book nav__icon"></i>
+                            <span>Skills</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#qualification" class="nav__link">
+                            <i class="bx bx-briefcase-alt nav__icon"></i>
+                            <span>Qualifications</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link">
+                            <i class="bx bx-briefcase-alt nav__icon"></i>
+                            <span>Services</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#projects" class="nav__link">
+                            <i class="bx bx-image nav__icon"></i>
+                            <span>Projects</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class="bx bx-message-square-detail nav__icon"></i>
+                            <span>Contact</span>
+                        </a>
+                    </li>
             </ul>
+
+                <i class="bx bx-x nav__close" id="nav-close"></i>
+            </div>
+
+            <div class="nav__btns">
+                <!-- Theme change button -->
+                <i class="bx bx-moon change-theme" id="theme-button"></i>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="bx bx-grid-alt"></i>
+                </div>
+            </div>
         </nav>
     </header>
     
-    <main>
-        <h1>Welcome to My Website</h1>
-        <p>Hi, I'm Euphraxiia! Welcome to my personal website.</p>
-        <img src="images/profile-photo.jpg" alt="Profile Photo">
+    <!-- Main -->
+    <main class="main">
+        <!-- Home -->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <span class="home__greeting">Hello, I'm</span>
+                    <h1 class="home__name">Euphraxiia</h1>
+                    <h3 class="home__education">Software Engineer</h3>
+                    
+                    <div class="home__buttons">
+                        <a download="" href="assets/pdf/resume.pdf" class="button button--ghost">
+                            Download CV
+                        </a>
+                        <a href="#about" class="button">About me</a>
+                    </div>
+                </div>
+
+                <div class="home__handle">
+                </div>
+
+                <div class="home__social">
+                    <a href="https://github.com" target="_blank" class="home__social-link">
+                        <i class="bx bxl-github"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" class="home__social-link">
+                        <i class="bx bxl-linkedin-square"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" class="home__social-link">
+                        <i class="bx bxl-twitter"></i>
+                    </a>
+                </div>
+
+                <a href="#about" class="home__scroll">
+                    <i class="bx bx-mouse home__scroll-icon"></i>
+                    <span class="home__scroll-name">Scroll Down</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section class="about section" id="about">
+            <span class="section__subtitle">My Intro</span>
+            <h2 class="section__title">About Me</h2>
+
+            <div class="about__container container">
+                <div class="about__data about__data--centered">
+                    <div class="about__info">
+                        <div class="about__box">
+                            <i class="bx bx-award about__icon"></i>
+                            <h3 class="about__title">Experience</h3>
+                            <span class="about__subtitle">First-Year Student</span>
+                        </div>
+                        <div class="about__box">
+                            <i class="bx bx-briefcase-alt about__icon"></i>
+                            <h3 class="about__title">Completed</h3>
+                            <span class="about__subtitle">10+ Projects</span>
+                        </div>
+                        <div class="about__box">
+                            <i class="bx bx-support about__icon"></i>
+                            <h3 class="about__title">Support</h3>
+                            <span class="about__subtitle">Online 24/7</span>
+                        </div>
+                    </div>
+
+                    <p class="about__description">
+                        Driven computer science student with a passion for building innovative software solutions.
+                        I thrive on transforming challenging problems into elegant, user-friendly applications.
+                        When I'm not studying or coding, you'll find me experimenting with emerging technologies or contributing to collaborative projects.
+                    </p>
+
+                    <a href="#contact" class="button">Contact Me</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section class="skills section" id="skills">
+            <span class="section__subtitle">My Abilities</span>
+            <h2 class="section__title">My Experience</h2>
+
+            <div class="skills__container container grid">
+                <div class="skills__content">
+                    <h3 class="skills__title">Frontend Developer</h3>
+
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class="bx bx-badge-check"></i>
+                                <div>
+                                    <h3 class="skills__name">HTML</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class="bx bx-badge-check"></i>
+                                <div>
+                                    <h3 class="skills__name">CSS</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class="bx bx-badge-check"></i>
+                                <div>
+                                    <h3 class="skills__name">JavaScript</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class="bx bx-badge-check"></i>
+                                <div>
+                                    <h3 class="skills__name">React</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class="bx bx-badge-check"></i>
+                                <div>
+                                    <h3 class="skills__name">DOM Manipulation</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class="bx bx-badge-check"></i>
+                                <div>
+                                    <h3 class="skills__name">Web APIs</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills__content">
+                    <h3 class="skills__title">Backend Developer</h3>
+
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class="bx bx-badge-check"></i>
+                                <div>
+                                    <h3 class="skills__name">Java</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class="bx bx-badge-check"></i>
+                                <div>
+                                    <h3 class="skills__name">Python</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class="bx bx-badge-check"></i>
+                                <div>
+                                    <h3 class="skills__name">Django</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class="bx bx-badge-check"></i>
+                                <div>
+                                    <h3 class="skills__name">SQL</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class="bx bx-badge-check"></i>
+                                <div>
+                                    <h3 class="skills__name">Git</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills__content">
+                    <h3 class="skills__title">Tools & Technologies</h3>
+
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class="bx bx-badge-check"></i>
+                                <div>
+                                    <h3 class="skills__name">GitHub</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class="bx bx-badge-check"></i>
+                                <div>
+                                    <h3 class="skills__name">VS Code</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class="bx bx-badge-check"></i>
+                                <div>
+                                    <h3 class="skills__name">Local Storage</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class="bx bx-badge-check"></i>
+                                <div>
+                                    <h3 class="skills__name">Form Validation</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class="bx bx-badge-check"></i>
+                                <div>
+                                    <h3 class="skills__name">Real-time Apps</h3>
+                                    <span class="skills__level">Beginner</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class="bx bx-badge-check"></i>
+                                <div>
+                                    <h3 class="skills__name">UI/UX Design</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Qualification -->
+        <section class="qualification section" id="qualification">
+            <span class="section__subtitle">My Journey</span>
+            <h2 class="section__title">Qualifications</h2>
+
+            <div class="qualification__container container">
+                <div class="qualification__tabs">
+                    <div class="qualification__button button--flex qualification__active" data-target="#education">
+                        <i class="bx bx-book-alt qualification__icon"></i>
+                        Education
+                    </div>
+                </div>
+
+                <div class="qualification__sections">
+                    <!-- Qualification Content 1 -->
+                    <div class="qualification__content qualification__active" data-content id="education">
+                        <!-- Qualification 1 -->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Computer Science</h3>
+                                <span class="qualification__subtitle">The IIE</span>
+                                <div class="qualification__calendar">
+                                    <i class="bx bx-calendar"></i>
+                                    2025 - 2028
+                                </div>
+                            </div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+
+                        <!-- Qualification 2 -->
+                        <div class="qualification__data">
+                            <div></div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                            <div>
+                                <h3 class="qualification__title">ALX Backend Development</h3>
+                                <span class="qualification__subtitle">ALX Africa</span>
+                                <div class="qualification__calendar">
+                                    <i class="bx bx-calendar"></i>
+                                    2025
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Qualification 3 -->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">ALX Frontend Development</h3>
+                                <span class="qualification__subtitle">ALX Africa</span>
+                                <div class="qualification__calendar">
+                                    <i class="bx bx-calendar"></i>
+                                    2025
+                                </div>
+                            </div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+
+                        <!-- Qualification 4 -->
+                        <div class="qualification__data">
+                            <div></div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                            <div>
+                                <h3 class="qualification__title">ALX Backend Pro-Development</h3>
+                                <span class="qualification__subtitle">ALX Africa</span>
+                                <div class="qualification__calendar">
+                                    <i class="bx bx-calendar"></i>
+                                    2025
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Qualification 5 -->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">AWS Cloud Practitioner</h3>
+                                <span class="qualification__subtitle">Amazon Web Services</span>
+                                <div class="qualification__calendar">
+                                    <i class="bx bx-calendar"></i>
+                                    2025
+                                </div>
+                            </div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+
+                        <!-- Qualification 6 -->
+                        <div class="qualification__data">
+                            <div></div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                            <div>
+                                <h3 class="qualification__title">ALX Cybersecurity</h3>
+                                <span class="qualification__subtitle">ALX Africa</span>
+                                <div class="qualification__calendar">
+                                    <i class="bx bx-calendar"></i>
+                                    2025 - 2026
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Qualification 7 -->
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">ALX Salesforce Administrator</h3>
+                                <span class="qualification__subtitle">ALX Africa</span>
+                                <div class="qualification__calendar">
+                                    <i class="bx bx-calendar"></i>
+                                    2025 - 2026
+                                </div>
+                            </div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Services -->
+        <section class="services section" id="services">
+            <span class="section__subtitle">My Services</span>
+            <h2 class="section__title">What I Offer</h2>
+
+            <div class="services__container container grid">
+                <!-- Service 1 -->
+                <div class="services__content">
+                    <div>
+                        <i class="bx bx-grid-alt services__icon"></i>
+                        <h3 class="services__title">Frontend <br> Developer</h3>
+                    </div>
+
+                    <span class="button button--flex button--small button--link services__button">
+                        View More
+                        <i class="bx bx-right-arrow-alt button__icon"></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <h4 class="services__modal-title">Frontend <br> Developer</h4>
+                            <i class="bx bx-x services__modal-close"></i>
+
+                            <ul class="services__modal-services">
+                                <li class="services__modal-service">
+                                    <i class="bx bx-check-circle services__modal-icon"></i>
+                                    <p>I develop the user interface.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="bx bx-check-circle services__modal-icon"></i>
+                                    <p>Web page development.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="bx bx-check-circle services__modal-icon"></i>
+                                    <p>I create ux element interactions.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="bx bx-check-circle services__modal-icon"></i>
+                                    <p>I position your company brand.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="services__content">
+                    <div>
+                        <i class="bx bx-code-alt services__icon"></i>
+                        <h3 class="services__title">Backend <br> Developer</h3>
+                    </div>
+
+                    <span class="button button--flex button--small button--link services__button">
+                        View More
+                        <i class="bx bx-right-arrow-alt button__icon"></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <h4 class="services__modal-title">Backend <br> Developer</h4>
+                            <i class="bx bx-x services__modal-close"></i>
+
+                            <ul class="services__modal-services">
+                                <li class="services__modal-service">
+                                    <i class="bx bx-check-circle services__modal-icon"></i>
+                                    <p>I develop server-side logic.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="bx bx-check-circle services__modal-icon"></i>
+                                    <p>Database management.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="bx bx-check-circle services__modal-icon"></i>
+                                    <p>API development.</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="bx bx-check-circle services__modal-icon"></i>
+                                    <p>Authentication and authorization.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 3 - Tools & Technologies -->
+                <div class="services__content">
+                    <div>
+                        <i class="bx bx-cog services__icon"></i>
+                        <h3 class="services__title">Tools & <br> Technologies</h3>
+                    </div>
+
+                    <span class="button button--flex button--small button--link services__button">
+                        View More
+                        <i class="bx bx-right-arrow-alt button__icon"></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <h4 class="services__modal-title">Tools & <br> Technologies</h4>
+                            <i class="bx bx-x services__modal-close"></i>
+
+                            <ul class="services__modal-services">
+                                <li class="services__modal-service">
+                                    <i class="bx bx-check-circle services__modal-icon"></i>
+                                    <p>Frontend: HTML, CSS, JavaScript, React.js</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="bx bx-check-circle services__modal-icon"></i>
+                                    <p>Backend: Python, Django, Node.js, Express</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="bx bx-check-circle services__modal-icon"></i>
+                                    <p>Database: MySQL, PostgreSQL, SQLite</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="bx bx-check-circle services__modal-icon"></i>
+                                    <p>Tools: Git, GitHub, VS Code, AWS</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="bx bx-check-circle services__modal-icon"></i>
+                                    <p>Cloud: AWS Cloud Practitioner certified</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="bx bx-check-circle services__modal-icon"></i>
+                                    <p>Other: REST APIs, JSON, Local Storage</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="projects section" id="projects">
+            <span class="section__subtitle">My Recent Work</span>
+            <h2 class="section__title">Recent Projects</h2>
+
+            <div class="projects__container container grid">
+                <!-- ALX Backend Python -->
+                <div class="projects__content">
+                    <div>
+                        <i class="bx bx-code-alt projects__icon"></i>
+                        <h3 class="projects__title">ALX Backend <br> Python</h3>
+                    </div>
+
+                    <span class="button button--flex button--small button--link projects__button">
+                        View More
+                        <i class="bx bx-right-arrow-alt button__icon"></i>
+                    </span>
+
+                    <div class="projects__modal">
+                        <div class="projects__modal-content">
+                            <h4 class="projects__modal-title">ALX Backend <br> Python</h4>
+                            <i class="bx bx-x projects__modal-close"></i>
+
+                            <ul class="projects__modal-services grid">
+                                <li class="projects__modal-service">
+                                    <i class="bx bx-check-circle projects__modal-icon"></i>
+                                    <p>Python backend development</p>
+                                </li>
+                                <li class="projects__modal-service">
+                                    <i class="bx bx-check-circle projects__modal-icon"></i>
+                                    <p>API development and integration</p>
+                                </li>
+                                <li class="projects__modal-service">
+                                    <i class="bx bx-check-circle projects__modal-icon"></i>
+                                    <p>Database design and management</p>
+                                </li>
+                                <li class="projects__modal-service">
+                                    <i class="bx bx-check-circle projects__modal-icon"></i>
+                                    <p>Server-side programming</p>
+                                </li>
+                            </ul>
+
+                            <div class="projects__modal-links">
+                                <a href="https://github.com/euphraxiia/alx_be_python" class="projects__modal-link" target="_blank">
+                                    <i class="bx bx-link-external"></i>
+                                    View Repository
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ALX Frontend JavaScript -->
+                <div class="projects__content">
+                    <div>
+                        <i class="bx bx-laptop projects__icon"></i>
+                        <h3 class="projects__title">ALX Frontend <br> JavaScript</h3>
+                    </div>
+
+                    <span class="button button--flex button--small button--link projects__button">
+                        View More
+                        <i class="bx bx-right-arrow-alt button__icon"></i>
+                    </span>
+
+                    <div class="projects__modal">
+                        <div class="projects__modal-content">
+                            <h4 class="projects__modal-title">ALX Frontend <br> JavaScript</h4>
+                            <i class="bx bx-x projects__modal-close"></i>
+
+                            <ul class="projects__modal-services grid">
+                                <li class="projects__modal-service">
+                                    <i class="bx bx-check-circle projects__modal-icon"></i>
+                                    <p>JavaScript fundamentals</p>
+                                </li>
+                                <li class="projects__modal-service">
+                                    <i class="bx bx-check-circle projects__modal-icon"></i>
+                                    <p>DOM manipulation</p>
+                                </li>
+                                <li class="projects__modal-service">
+                                    <i class="bx bx-check-circle projects__modal-icon"></i>
+                                    <p>Client-side programming</p>
+                                </li>
+                                <li class="projects__modal-service">
+                                    <i class="bx bx-check-circle projects__modal-icon"></i>
+                                    <p>Web application development</p>
+                                </li>
+                            </ul>
+
+                            <div class="projects__modal-links">
+                                <a href="https://github.com/euphraxiia/alx_fe_javascript" class="projects__modal-link" target="_blank">
+                                    <i class="bx bx-link-external"></i>
+                                    View Repository
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- React.js Frontend -->
+                <div class="projects__content">
+                    <div>
+                        <i class="bx bxl-react projects__icon"></i>
+                        <h3 class="projects__title">ALX React.js <br> Development</h3>
+                    </div>
+
+                    <span class="button button--flex button--small button--link projects__button">
+                        View More
+                        <i class="bx bx-right-arrow-alt button__icon"></i>
+                    </span>
+
+                    <div class="projects__modal">
+                        <div class="projects__modal-content">
+                            <h4 class="projects__modal-title">ALX React.js <br> Development</h4>
+                            <i class="bx bx-x projects__modal-close"></i>
+
+                            <ul class="projects__modal-services grid">
+                                <li class="projects__modal-service">
+                                    <i class="bx bx-check-circle projects__modal-icon"></i>
+                                    <p>React components and hooks</p>
+                                </li>
+                                <li class="projects__modal-service">
+                                    <i class="bx bx-check-circle projects__modal-icon"></i>
+                                    <p>State management</p>
+                                </li>
+                                <li class="projects__modal-service">
+                                    <i class="bx bx-check-circle projects__modal-icon"></i>
+                                    <p>React routing</p>
+                                </li>
+                                <li class="projects__modal-service">
+                                    <i class="bx bx-check-circle projects__modal-icon"></i>
+                                    <p>Modern React practices</p>
+                                </li>
+                            </ul>
+
+                            <div class="projects__modal-links">
+                                <a href="https://github.com/euphraxiia/alx-fe-reactjs" class="projects__modal-link" target="_blank">
+                                    <i class="bx bx-link-external"></i>
+                                    View Repository
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Django Full-Stack -->
+                <div class="projects__content">
+                    <div>
+                        <i class="bx bx-server projects__icon"></i>
+                        <h3 class="projects__title">Django Learn <br> Lab</h3>
+                    </div>
+
+                    <span class="button button--flex button--small button--link projects__button">
+                        View More
+                        <i class="bx bx-right-arrow-alt button__icon"></i>
+                    </span>
+
+                    <div class="projects__modal">
+                        <div class="projects__modal-content">
+                            <h4 class="projects__modal-title">Django Learn <br> Lab</h4>
+                            <i class="bx bx-x projects__modal-close"></i>
+
+                            <ul class="projects__modal-services grid">
+                                <li class="projects__modal-service">
+                                    <i class="bx bx-check-circle projects__modal-icon"></i>
+                                    <p>Django models and views</p>
+                                </li>
+                                <li class="projects__modal-service">
+                                    <i class="bx bx-check-circle projects__modal-icon"></i>
+                                    <p>Template system</p>
+                                </li>
+                                <li class="projects__modal-service">
+                                    <i class="bx bx-check-circle projects__modal-icon"></i>
+                                    <p>User authentication</p>
+                                </li>
+                                <li class="projects__modal-service">
+                                    <i class="bx bx-check-circle projects__modal-icon"></i>
+                                    <p>Full-stack development</p>
+                                </li>
+                            </ul>
+
+                            <div class="projects__modal-links">
+                                <a href="https://github.com/euphraxiia/Alx_DjangoLearnLab" class="projects__modal-link" target="_blank">
+                                    <i class="bx bx-link-external"></i>
+                                    View Repository
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GitHub Clone -->
+                <div class="projects__content">
+                    <div>
+                        <i class="bx bx-git-branch projects__icon"></i>
+                        <h3 class="projects__title">GitHub Clone <br> Project</h3>
+                    </div>
+
+                    <span class="button button--flex button--small button--link projects__button">
+                        View More
+                        <i class="bx bx-right-arrow-alt button__icon"></i>
+                    </span>
+
+                    <div class="projects__modal">
+                        <div class="projects__modal-content">
+                            <h4 class="projects__modal-title">GitHub Clone <br> Project</h4>
+                            <i class="bx bx-x projects__modal-close"></i>
+
+                            <ul class="projects__modal-services grid">
+                                <li class="projects__modal-service">
+                                    <i class="bx bx-check-circle projects__modal-icon"></i>
+                                    <p>Advanced UI/UX design</p>
+                                </li>
+                                <li class="projects__modal-service">
+                                    <i class="bx bx-check-circle projects__modal-icon"></i>
+                                    <p>API integration</p>
+                                </li>
+                                <li class="projects__modal-service">
+                                    <i class="bx bx-check-circle projects__modal-icon"></i>
+                                    <p>Complex interface replication</p>
+                                </li>
+                                <li class="projects__modal-service">
+                                    <i class="bx bx-check-circle projects__modal-icon"></i>
+                                    <p>Modern web technologies</p>
+                                </li>
+                            </ul>
+
+                            <div class="projects__modal-links">
+                                <a href="https://github.com/euphraxiia/GitHubCloneProject" class="projects__modal-link" target="_blank">
+                                    <i class="bx bx-link-external"></i>
+                                    View Repository
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dynamic Todo List -->
+                <div class="projects__content">
+                    <div>
+                        <i class="bx bx-task projects__icon"></i>
+                        <h3 class="projects__title">Dynamic Todo <br> List</h3>
+                    </div>
+
+                    <span class="button button--flex button--small button--link projects__button">
+                        View More
+                        <i class="bx bx-right-arrow-alt button__icon"></i>
+                    </span>
+
+                    <div class="projects__modal">
+                        <div class="projects__modal-content">
+                            <h4 class="projects__modal-title">Dynamic Todo <br> List</h4>
+                            <i class="bx bx-x projects__modal-close"></i>
+
+                            <ul class="projects__modal-services grid">
+                                <li class="projects__modal-service">
+                                    <i class="bx bx-check-circle projects__modal-icon"></i>
+                                    <p>DOM manipulation</p>
+                                </li>
+                                <li class="projects__modal-service">
+                                    <i class="bx bx-check-circle projects__modal-icon"></i>
+                                    <p>Local storage</p>
+                                </li>
+                                <li class="projects__modal-service">
+                                    <i class="bx bx-check-circle projects__modal-icon"></i>
+                                    <p>CRUD operations</p>
+                                </li>
+                                <li class="projects__modal-service">
+                                    <i class="bx bx-check-circle projects__modal-icon"></i>
+                                    <p>Interactive features</p>
+                                </li>
+                            </ul>
+
+                            <div class="projects__modal-links">
+                                <a href="https://github.com/euphraxiia/dynamic-to-do-list-js" class="projects__modal-link" target="_blank">
+                                    <i class="bx bx-link-external"></i>
+                                    View Repository
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chat Application -->
+                <div class="projects__content">
+                    <div>
+                        <i class="bx bx-message-dots projects__icon"></i>
+                        <h3 class="projects__title">Chat Application <br> Part 3</h3>
+                    </div>
+
+                    <span class="button button--flex button--small button--link projects__button">
+                        View More
+                        <i class="bx bx-right-arrow-alt button__icon"></i>
+                    </span>
+
+                    <div class="projects__modal">
+                        <div class="projects__modal-content">
+                            <h4 class="projects__modal-title">Chat Application <br> Part 3</h4>
+                            <i class="bx bx-x projects__modal-close"></i>
+
+                            <ul class="projects__modal-services grid">
+                                <li class="projects__modal-service">
+                                    <i class="bx bx-check-circle projects__modal-icon"></i>
+                                    <p>Real-time communication</p>
+                                </li>
+                                <li class="projects__modal-service">
+                                    <i class="bx bx-check-circle projects__modal-icon"></i>
+                                    <p>WebSocket implementation</p>
+                                </li>
+                                <li class="projects__modal-service">
+                                    <i class="bx bx-check-circle projects__modal-icon"></i>
+                                    <p>Interactive features</p>
+                                </li>
+                                <li class="projects__modal-service">
+                                    <i class="bx bx-check-circle projects__modal-icon"></i>
+                                    <p>Advanced JavaScript</p>
+                                </li>
+                            </ul>
+
+                            <div class="projects__modal-links">
+                                <a href="https://github.com/euphraxiia/ChatApplicationPart3" class="projects__modal-link" target="_blank">
+                                    <i class="bx bx-link-external"></i>
+                                    View Repository
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Validation -->
+                <div class="projects__content">
+                    <div>
+                        <i class="bx bx-edit projects__icon"></i>
+                        <h3 class="projects__title">Form Creation <br> Validation</h3>
+                    </div>
+
+                    <span class="button button--flex button--small button--link projects__button">
+                        View More
+                        <i class="bx bx-right-arrow-alt button__icon"></i>
+                    </span>
+
+                    <div class="projects__modal">
+                        <div class="projects__modal-content">
+                            <h4 class="projects__modal-title">Form Creation <br> Validation</h4>
+                            <i class="bx bx-x projects__modal-close"></i>
+
+                            <ul class="projects__modal-services grid">
+                                <li class="projects__modal-service">
+                                    <i class="bx bx-check-circle projects__modal-icon"></i>
+                                    <p>Client-side validation</p>
+                                </li>
+                                <li class="projects__modal-service">
+                                    <i class="bx bx-check-circle projects__modal-icon"></i>
+                                    <p>User input handling</p>
+                                </li>
+                                <li class="projects__modal-service">
+                                    <i class="bx bx-check-circle projects__modal-icon"></i>
+                                    <p>Error messaging</p>
+                                </li>
+                                <li class="projects__modal-service">
+                                    <i class="bx bx-check-circle projects__modal-icon"></i>
+                                    <p>Form submission processing</p>
+                                </li>
+                            </ul>
+
+                            <div class="projects__modal-links">
+                                <a href="https://github.com/euphraxiia/Form-Creation-Validation" class="projects__modal-link" target="_blank">
+                                    <i class="bx bx-link-external"></i>
+                                    View Repository
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Contact -->
+        <section class="contact section" id="contact">
+            <span class="section__subtitle">Get in Touch</span>
+            <h2 class="section__title">Contact Me</h2>
+
+            <div class="contact__container container">
+                <div class="contact__grid">
+                    <!-- Left Column - Work With Me Form -->
+                    <div class="contact__section">
+                        <div class="contact__section-container">
+                            <h3 class="contact__section-title">Work With Me</h3>
+                            
+                            <form action="" class="contact__form" id="contact-form">
+                                <div class="contact__inputs">
+                                    <div class="contact__field-container">
+                                        <div class="contact__field-wrapper">
+                                            <label class="contact__form-tag">Name</label>
+                                            <input type="text" name="user_name" required placeholder="Your name" class="contact__form-input" id="contact-name">
+                                        </div>
+                                    </div>
+
+                                    <div class="contact__field-container">
+                                        <div class="contact__field-wrapper">
+                                            <label class="contact__form-tag">Mail</label>
+                                            <input type="email" name="user_email" required placeholder="Your email" class="contact__form-input" id="contact-email">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="contact__field-container contact__form-area">
+                                    <div class="contact__field-wrapper">
+                                        <label class="contact__form-tag">Project</label>
+                                        <textarea name="user_project" required placeholder="Tell me about your project" class="contact__form-input" id="contact-project"></textarea>
+                                    </div>
+                                </div>
+
+                                <button type="submit" class="button contact__form-button">
+                                    Send Message
+                                    <svg class="button__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M14.2199 21.9352C13.0399 21.9352 11.3699 21.1052 10.0499 17.1352L9.32988 14.9752L7.16988 14.2552C3.20988 12.9352 2.37988 11.2652 2.37988 10.0852C2.37988 8.91525 3.20988 7.23525 7.16988 5.90525L15.6599 3.07525C17.7799 2.36525 19.5499 2.57525 20.6399 3.65525C21.7299 4.73525 21.9399 6.51525 21.2299 8.63525L18.3999 17.1252C17.0699 21.1052 15.3999 21.9352 14.2199 21.9352ZM7.63988 7.33525C4.85988 8.26525 3.86988 9.36525 3.86988 10.0852C3.86988 10.8052 4.85988 11.9052 7.63988 12.8252L10.1599 13.6652C10.3799 13.7352 10.5599 13.9152 10.6299 14.1352L11.4699 16.6552C12.3899 19.4352 13.4999 20.4252 14.2199 20.4252C14.9399 20.4252 16.0399 19.4352 16.9699 16.6552L19.7999 8.16525C20.3099 6.62525 20.2199 5.36525 19.5699 4.71525C18.9199 4.06525 17.6599 3.98525 16.1299 4.49525L7.63988 7.33525Z" fill="white"></path>
+                                        <path d="M10.11 14.7052C9.92005 14.7052 9.73005 14.6352 9.58005 14.4852C9.29005 14.1952 9.29005 13.7152 9.58005 13.4252L13.16 9.83518C13.45 9.54518 13.93 9.54518 14.22 9.83518C14.51 10.1252 14.51 10.6052 14.22 10.8952L10.64 14.4852C10.5 14.6352 10.3 14.7052 10.11 14.7052Z" fill="white"></path>
+                                    </svg>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Right Column - Talk To Me Contact Information -->
+                    <div class="contact__section">
+                        <div class="contact__section-container">
+                            <h3 class="contact__section-title">Talk To Me</h3>
+                            
+                            <div class="contact__info">
+                                <div class="contact__info-item">
+                                    <i class="bx bx-mail-send contact__info-icon"></i>
+                                    <div class="contact__info-content">
+                                        <h4 class="contact__info-title">Email</h4>
+                                        <span class="contact__info-data">euphraxiia@icloud.com</span>
+                                    </div>
+                                    <a href="mailto:euphraxiia@icloud.com" class="contact__info-button">
+                                        Contact Me
+                                    </a>
+                                </div>
+
+                                <div class="contact__info-item">
+                                    <i class="bx bxl-whatsapp contact__info-icon"></i>
+                                    <div class="contact__info-content">
+                                        <h4 class="contact__info-title">WhatsApp</h4>
+                                        <span class="contact__info-data">+27694504850</span>
+                                    </div>
+                                    <a href="https://api.whatsapp.com/send?phone=27694504850" class="contact__info-button">
+                                        Message Me
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container container">
+            <span class="footer__copy">
+                &#169; Euphraxiia. All rights reserved.
+            </span>
+        </div>
+    </footer>
+
+    <!-- Scroll Up -->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="bx bx-up-arrow-alt scrollup__icon"></i>
+    </a>
+
+    <!-- Mixitup Filter -->
+    <script src="https://cdn.jsdelivr.net/npm/mixitup@3.3.1/dist/mixitup.min.js"></script>
     
-    <script src="js/script.js"></script>
-    <script src="js/animations.js"></script>
+    <!-- Scroll Reveal Animation -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
