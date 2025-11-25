@@ -713,6 +713,14 @@ body.dark-theme {
   letter-spacing: 2px;
 }
 
+.home__name {
+  color: white;
+  font-size: 3.5rem;
+  font-weight: var(--font-bold);
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
 .home__title {
   font-size: 10rem;
   line-height: 0.9;
@@ -2404,6 +2412,10 @@ body.dark-theme {
   
   .home__greeting {
     font-size: 1.8rem;
+  }
+  
+  .home__name {
+    font-size: 2.5rem;
   }
   
   .home__subtitle {
