@@ -146,14 +146,24 @@ projectModalCloses.forEach((projectModalClose) => {
 })
 
 /*=============== MIXITUP FILTER PORTFOLIO ===============*/
-let mixerPortfolio = mixitup('.projects__container', {
-    selectors: {
-        target: '.projects__content'
-    },
-    animation: {
-        duration: 300
-    }
-});
+let mixerPortfolio;
+try {
+    mixerPortfolio = mixitup('.projects__container', {
+        selectors: {
+            target: '.projects__content'
+        },
+        animation: {
+            duration: 300
+        }
+    });
+} catch(e) {
+    // Fallback: ensure all project cards are visible if MixItUp fails
+    document.querySelectorAll('.projects__content').forEach(function(el) {
+        el.style.display = '';
+        el.style.opacity = '1';
+        el.style.visibility = 'visible';
+    });
+}
 
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
