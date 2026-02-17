@@ -25,8 +25,7 @@
     <header class="header" id="header">
         <nav class="nav container">
             <a href="#" class="nav__logo">
-                <i class="bx bxs-user-circle"></i>
-                Tumi
+                <img src="assets/img/logo.png" alt="Tumi Logo" class="nav__logo-img">
             </a>
 
             <div class="nav__menu" id="nav-menu">
@@ -556,6 +555,144 @@
 
             <div class="projects__container container grid">
 
+                <!-- Clinic Queue Manager -->
+                <div class="projects__content">
+                    <div>
+                        <i class="bx bx-plus-medical projects__icon"></i>
+                        <h3 class="projects__title">Clinic Queue <br> Manager</h3>
+                    </div>
+
+                    <span class="button button--flex button--small button--link projects__button">
+                        View More
+                        <i class="bx bx-right-arrow-alt button__icon"></i>
+                    </span>
+
+                    <div class="projects__modal">
+                        <div class="projects__modal-content">
+                            <h4 class="projects__modal-title">Clinic Queue <br> Manager</h4>
+                            <i class="bx bx-x projects__modal-close"></i>
+
+                            <ul class="projects__modal-services grid">
+                                <li class="projects__modal-service">
+                                    <i class="bx bx-check-circle projects__modal-icon"></i>
+                                    <p>Django app for managing patient queues in SA public health clinics with ticket generation.</p>
+                                </li>
+                                <li class="projects__modal-service">
+                                    <i class="bx bx-check-circle projects__modal-icon"></i>
+                                    <p>SMS notifications via Twilio or Africa's Talking when patients are close to being called.</p>
+                                </li>
+                                <li class="projects__modal-service">
+                                    <i class="bx bx-check-circle projects__modal-icon"></i>
+                                    <p>Real-time queue display, priority handling, and wait time estimation across multiple service types.</p>
+                                </li>
+                                <li class="projects__modal-service">
+                                    <i class="bx bx-check-circle projects__modal-icon"></i>
+                                    <p>Staff and admin dashboards with daily stats, Dockerised deployment, and REST API.</p>
+                                </li>
+                            </ul>
+
+                            <div class="projects__modal-links">
+                                <a href="https://github.com/euphraxiia/clinic-queue-manager" class="projects__modal-link" target="_blank">
+                                    <i class="bx bx-link-external"></i>
+                                    View Repository
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- JobTrack Automate -->
+                <div class="projects__content">
+                    <div>
+                        <i class="bx bx-briefcase projects__icon"></i>
+                        <h3 class="projects__title">JobTrack <br> Automate</h3>
+                    </div>
+
+                    <span class="button button--flex button--small button--link projects__button">
+                        View More
+                        <i class="bx bx-right-arrow-alt button__icon"></i>
+                    </span>
+
+                    <div class="projects__modal">
+                        <div class="projects__modal-content">
+                            <h4 class="projects__modal-title">JobTrack <br> Automate</h4>
+                            <i class="bx bx-x projects__modal-close"></i>
+
+                            <ul class="projects__modal-services grid">
+                                <li class="projects__modal-service">
+                                    <i class="bx bx-check-circle projects__modal-icon"></i>
+                                    <p>Django app for tracking job applications across SA job boards like PNet, Careers24, and LinkedIn.</p>
+                                </li>
+                                <li class="projects__modal-service">
+                                    <i class="bx bx-check-circle projects__modal-icon"></i>
+                                    <p>Selenium automation for auto-applying, with CAPTCHA handling and POPIA-compliant consent.</p>
+                                </li>
+                                <li class="projects__modal-service">
+                                    <i class="bx bx-check-circle projects__modal-icon"></i>
+                                    <p>Analytics dashboard with response rates, interview stats, charts, and CSV export.</p>
+                                </li>
+                                <li class="projects__modal-service">
+                                    <i class="bx bx-check-circle projects__modal-icon"></i>
+                                    <p>REST API with JWT authorisation, Celery email reminders, and document versioning for CVs and cover letters.</p>
+                                </li>
+                            </ul>
+
+                            <div class="projects__modal-links">
+                                <a href="https://github.com/euphraxiia/jobtrack-automate" class="projects__modal-link" target="_blank">
+                                    <i class="bx bx-link-external"></i>
+                                    View Repository
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mzansi Route Optimiser -->
+                <div class="projects__content">
+                    <div>
+                        <i class="bx bx-trip projects__icon"></i>
+                        <h3 class="projects__title">Mzansi Route <br> Optimiser</h3>
+                    </div>
+
+                    <span class="button button--flex button--small button--link projects__button">
+                        View More
+                        <i class="bx bx-right-arrow-alt button__icon"></i>
+                    </span>
+
+                    <div class="projects__modal">
+                        <div class="projects__modal-content">
+                            <h4 class="projects__modal-title">Mzansi Route <br> Optimiser</h4>
+                            <i class="bx bx-x projects__modal-close"></i>
+
+                            <ul class="projects__modal-services grid">
+                                <li class="projects__modal-service">
+                                    <i class="bx bx-check-circle projects__modal-icon"></i>
+                                    <p>Spring Boot API for optimising public transport routes across SA using Dijkstra's shortest path algorithm.</p>
+                                </li>
+                                <li class="projects__modal-service">
+                                    <i class="bx bx-check-circle projects__modal-icon"></i>
+                                    <p>Greedy load balancing to spread passengers across minibus taxis and buses at Gauteng ranks.</p>
+                                </li>
+                                <li class="projects__modal-service">
+                                    <i class="bx bx-check-circle projects__modal-icon"></i>
+                                    <p>Graph data structures, priority queues, Haversine distance calculations, and fleet analytics.</p>
+                                </li>
+                                <li class="projects__modal-service">
+                                    <i class="bx bx-check-circle projects__modal-icon"></i>
+                                    <p>Java 17 with Spring Data JPA, H2 database, REST API, and full JUnit 5 test suite.</p>
+                                </li>
+                            </ul>
+
+                            <div class="projects__modal-links">
+                                <a href="https://github.com/euphraxiia/mzansi-route-optimiser" class="projects__modal-link" target="_blank">
+                                    <i class="bx bx-link-external"></i>
+                                    View Repository
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- Blog Database System -->
                 <div class="projects__content">
                     <div>
@@ -654,7 +791,7 @@
                         <i class="bx bx-car projects__icon"></i>
                         <h3 class="projects__title">Parking Lot <br> System</h3>
                     </div>
-
+ 
                     <span class="button button--flex button--small button--link projects__button">
                         View More
                         <i class="bx bx-right-arrow-alt button__icon"></i>
@@ -1516,6 +1653,144 @@
 
                             <div class="projects__modal-links">
                                 <a href="https://github.com/euphraxiia/alx_travel_app" class="projects__modal-link" target="_blank">
+                                    <i class="bx bx-link-external"></i>
+                                    View Repository
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Load Shedding Notifier -->
+                <div class="projects__content">
+                    <div>
+                        <i class="bx bx-bolt-circle projects__icon"></i>
+                        <h3 class="projects__title">Load Shedding <br> Notifier</h3>
+                    </div>
+
+                    <span class="button button--flex button--small button--link projects__button">
+                        View More
+                        <i class="bx bx-right-arrow-alt button__icon"></i>
+                    </span>
+
+                    <div class="projects__modal">
+                        <div class="projects__modal-content">
+                            <h4 class="projects__modal-title">Load Shedding <br> Notifier</h4>
+                            <i class="bx bx-x projects__modal-close"></i>
+
+                            <ul class="projects__modal-services grid">
+                                <li class="projects__modal-service">
+                                    <i class="bx bx-check-circle projects__modal-icon"></i>
+                                    <p>Flask web app that tracks Eskom load shedding schedules by suburb or area code.</p>
+                                </li>
+                                <li class="projects__modal-service">
+                                    <i class="bx bx-check-circle projects__modal-icon"></i>
+                                    <p>Email notifications sent 2 hours before scheduled outages via SMTP.</p>
+                                </li>
+                                <li class="projects__modal-service">
+                                    <i class="bx bx-check-circle projects__modal-icon"></i>
+                                    <p>EskomSePush API integration with caching and mock data support.</p>
+                                </li>
+                                <li class="projects__modal-service">
+                                    <i class="bx bx-check-circle projects__modal-icon"></i>
+                                    <p>RESTful API with subscription management and SQLite persistence.</p>
+                                </li>
+                            </ul>
+
+                            <div class="projects__modal-links">
+                                <a href="https://github.com/euphraxiia/loadsheddding-notifier" class="projects__modal-link" target="_blank">
+                                    <i class="bx bx-link-external"></i>
+                                    View Repository
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Student Budget Tracker -->
+                <div class="projects__content">
+                    <div>
+                        <i class="bx bx-calculator projects__icon"></i>
+                        <h3 class="projects__title">Student Budget <br> Tracker</h3>
+                    </div>
+
+                    <span class="button button--flex button--small button--link projects__button">
+                        View More
+                        <i class="bx bx-right-arrow-alt button__icon"></i>
+                    </span>
+
+                    <div class="projects__modal">
+                        <div class="projects__modal-content">
+                            <h4 class="projects__modal-title">Student Budget <br> Tracker</h4>
+                            <i class="bx bx-x projects__modal-close"></i>
+
+                            <ul class="projects__modal-services grid">
+                                <li class="projects__modal-service">
+                                    <i class="bx bx-check-circle projects__modal-icon"></i>
+                                    <p>Django app for SA students to track income, expenses, and monthly budgets.</p>
+                                </li>
+                                <li class="projects__modal-service">
+                                    <i class="bx bx-check-circle projects__modal-icon"></i>
+                                    <p>Automatic risk assessment with personalised budget advice and warnings.</p>
+                                </li>
+                                <li class="projects__modal-service">
+                                    <i class="bx bx-check-circle projects__modal-icon"></i>
+                                    <p>Charts, graphs, and PDF export for spending breakdowns and reports.</p>
+                                </li>
+                                <li class="projects__modal-service">
+                                    <i class="bx bx-check-circle projects__modal-icon"></i>
+                                    <p>Django REST Framework API with user authentication and responsive design.</p>
+                                </li>
+                            </ul>
+
+                            <div class="projects__modal-links">
+                                <a href="https://github.com/euphraxiia/student-budget-tracker" class="projects__modal-link" target="_blank">
+                                    <i class="bx bx-link-external"></i>
+                                    View Repository
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SafeBrowse ZA -->
+                <div class="projects__content">
+                    <div>
+                        <i class="bx bx-shield projects__icon"></i>
+                        <h3 class="projects__title">SafeBrowse <br> ZA</h3>
+                    </div>
+
+                    <span class="button button--flex button--small button--link projects__button">
+                        View More
+                        <i class="bx bx-right-arrow-alt button__icon"></i>
+                    </span>
+
+                    <div class="projects__modal">
+                        <div class="projects__modal-content">
+                            <h4 class="projects__modal-title">SafeBrowse <br> ZA</h4>
+                            <i class="bx bx-x projects__modal-close"></i>
+
+                            <ul class="projects__modal-services grid">
+                                <li class="projects__modal-service">
+                                    <i class="bx bx-check-circle projects__modal-icon"></i>
+                                    <p>URL safety checker built for SA, spotting phishing sites targeting local banks and services.</p>
+                                </li>
+                                <li class="projects__modal-service">
+                                    <i class="bx bx-check-circle projects__modal-icon"></i>
+                                    <p>Validates HTTPS certificates, checks domain age via WHOIS, and detects suspicious patterns.</p>
+                                </li>
+                                <li class="projects__modal-service">
+                                    <i class="bx bx-check-circle projects__modal-icon"></i>
+                                    <p>Cross-references PhishTank, Google Safe Browsing, and a local scam blacklist.</p>
+                                </li>
+                                <li class="projects__modal-service">
+                                    <i class="bx bx-check-circle projects__modal-icon"></i>
+                                    <p>FastAPI backend with async SQLAlchemy, rate limiting, and safety scoring out of 100.</p>
+                                </li>
+                            </ul>
+
+                            <div class="projects__modal-links">
+                                <a href="https://github.com/euphraxiia/safebrowse-za" class="projects__modal-link" target="_blank">
                                     <i class="bx bx-link-external"></i>
                                     View Repository
                                 </a>

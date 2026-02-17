@@ -241,6 +241,63 @@ body.dark-theme {
   color: var(--first-color);
 }
 
+.nav__logo-img {
+  width: 5.5rem;
+  height: 5.5rem;
+  object-fit: contain;
+  transition: .3s;
+}
+
+/* Logo responsive sizing */
+@media screen and (max-width: 320px) {
+  .nav__logo-img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 375px) {
+  .nav__logo-img {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 430px) {
+  .nav__logo-img {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+@media screen and (min-width: 431px) and (max-width: 767px) {
+  .nav__logo-img {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .nav__logo-img {
+    width: 5.5rem;
+    height: 5.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1366px) {
+  .nav__logo-img {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+}
+
+@media screen and (min-width: 1921px) {
+  .nav__logo-img {
+    width: 6.5rem;
+    height: 6.5rem;
+  }
+}
+
 .nav__list {
   display: flex;
   column-gap: 3rem;
